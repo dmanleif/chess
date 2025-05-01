@@ -2,10 +2,10 @@ class Piece:
     def __init__(self, white_in):
         self.white = white_in
         self.killed = False
-        self.moved = False
+        self.moved = 0
 
     def setMoved(self):
-        self.moved = True
+        self.moved += 1
 
 
     def isWhite(self):
